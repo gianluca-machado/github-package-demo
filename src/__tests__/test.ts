@@ -1,5 +1,5 @@
-import { PlaformCustomerConnectorConfiguration } from '../index';
+import { GithubPackageDemoConfiguration } from '../index';
 
 test('confguration', () => {
-  expect(PlaformCustomerConnectorConfiguration()).toBe(process.env.NODE_ENV);
+  expect(GithubPackageDemoConfiguration()).toBe(process.env.NODE_ENV);
 });

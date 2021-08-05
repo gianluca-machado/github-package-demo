@@ -1,6 +1,6 @@
 {
-  "name": "@gianluca-machado/platform-customer-connector",
-  "version": "1.0.4",
+  "name": "@gianluca-machado/github-package-demo",
+  "version": "1.0.5",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -22,15 +22,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gianluca-machado/platform-customer-connector.git"
+    "url": "git+https://github.com/gianluca-machado/github-package-demo.git"
   },
   "keywords": [],
   "author": "Gianluca Maziero Machado",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gianluca-machado/platform-customer-connector/issues"
+    "url": "https://github.com/gianluca-machado/github-package-demo/issues"
   },
-  "homepage": "https://github.com/gianluca-machado/platform-customer-connector#readme",
+  "homepage": "https://github.com/gianluca-machado/github-package-demo#readme",
   "devDependencies": {
     "@types/jest": "^26.0.24",
     "jest": "^27.0.6",
