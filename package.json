@@ -1,20 +1,31 @@
 {
-  "name": "platform-menu-connector",
-  "version": "1.0.0",
+  "name": "@gianluca-machado/platform-customer-connector",
+  "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" --no-error-on-unmatched-pattern",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "version:patch": "npm version patch",
+    "publish": "npm publish"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gianluca-machado/platform-customer-connector.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gianluca Maziero Machado",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gianluca-machado/platform-customer-connector/issues"
@@ -30,6 +41,6 @@
     "typescript": "^4.3.5"
   },
   "files": [
-    "dist/**/*"
+    "lib/**/*"
   ]
 }

@@ -1,4 +1,5 @@
-import { Greeter } from '../index';
-test('My Greeter', () => {
-    expect(Greeter('Carl')).toBe('Hello Carl');
+import { PlaformCustomerConnectorConfiguration } from '../index';
+
+test('confguration', () => {
+  expect(PlaformCustomerConnectorConfiguration()).toBe(process.env.NODE_ENV);
 });
